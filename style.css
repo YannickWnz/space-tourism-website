@@ -1,0 +1,1029 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bellefair', serif;
+    /* overflow-x: hidden !important; */
+}
+
+section#home {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/starter-code/assets/home/background-home-desktop.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* overflow-x: hidden !important; */
+    /* border: 2px solid red; */
+}
+
+nav {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+}
+
+/* 
+nav hr {
+    width: 450px;
+    height: .5px;
+    background-color: rgba(255, 253, 253, 0.347);
+    border: none;
+    transform: translateX(50px);
+    z-index: 2;
+} */
+
+.logo {
+    margin: 0 40px;
+}
+
+.links-container {
+    width: 900px;
+    height: 90px;
+    background: rgba(104, 102, 102, 0.22);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    z-index: 1;
+}
+
+.links-container hr {
+    width: 350px;
+    height: .5px;
+    background-color: rgba(255, 253, 253, 0.347);
+    border: none;
+    z-index: 2;
+    position: absolute;
+    left: -35%;
+    top: 50%;
+}
+
+.links-wrapper {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.nav-links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-links li {
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: .2s ease-in-out;
+}
+
+.nav-links li:hover {
+    border-bottom: 4px solid rgba(245, 245, 245, 0.237);
+}
+
+li.active-link {
+    border-bottom: 4px solid white
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    /* font-weight: bolder; */
+}
+
+.nav-links li a span {
+    margin-right: 5px;
+}
+
+.menu {
+    display: none;
+}
+
+.menu i {
+    color: white;
+    font-size: 2.2em;
+    cursor: pointer;
+}
+
+.close-menu {
+    display: none;
+}
+
+/* home content CSS START */
+.home-content {
+    width: 100%;
+    min-height: calc(100vh - 150px);
+    /* border: 2px solid white; */
+}
+
+.home-content .container {
+    width: 100%;
+    max-width: 80%;
+    min-height: inherit;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.home-content .container > div {
+    width: 50%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-content .container .text-content p {
+    font-size: 1.4em;
+}
+
+.home-content .container .text-content p:nth-child(2) {
+    font-size: 7em;
+    margin: 25px 0;
+}
+
+.home-content .container .text-content p:nth-child(3) {
+    font-size: 1.2em;
+    line-height: 2;
+    /* border: 1px solid red; */
+    max-width: 400px;
+    /* text-align: center; */
+}
+
+.home-content .container .explore {
+    display: flex;
+    align-items: flex-end;
+    overflow-x: auto;
+    overflow-x: visible;
+}
+
+.home-content .container .explore .wrapper {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+.home-content .container .explore .wrapper:hover {
+    background-color: rgba(245, 245, 245, 0.237);
+    transform: scale(1.1);
+}
+
+.home-content .container .explore a {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.home-content .container .explore a:hover .wrapper{
+    background: whitesmoke;
+}
+
+/* home content CSS END */
+
+/* DESTINATION PAGE CSS START */
+
+section#destination {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/starter-code/assets/destination/background-destination-desktop.jpg'), linear-gradient(rgba(92, 91, 91, 0.65),rgba(58, 56, 56, 0.5));
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.destination-content {
+    width: 100%;
+    min-height: calc(100vh - 150px);
+}
+
+.destination-content .container {
+    width: 100%;
+    max-width: 1300px;
+    min-height: inherit;
+    margin: auto;
+}
+
+.destination-content .container h1.opening {
+    color: white !important;
+    font-size:1.6em;
+    font-weight: 400;
+    height: 60px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    padding: 30px 50px 0;
+    /* border: 1px solid white; */
+}
+
+.destination-content .container h1.opening span {
+    color: #52545C;
+    margin-right: 10px;
+}
+
+.destination-content .planet-details-container {
+    width: 100%;
+    min-height: calc(100vh - (150px + 60px));
+    display: flex;
+}
+
+.destination-content .planet-details-container > div {
+    width: calc(100% / 2);
+    min-height: inherit;
+}
+
+.planets-img-container {
+    /* border: 3px solid darkgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.planets-img-container > div {
+    display: none;
+}
+
+.planets-img-container > div.active-planet-img {
+    display: block;
+}
+/* 
+.active-planet-img {
+    display: block !important;
+} */
+
+.planets-details {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planets-details-container {
+    width: 100%;
+    max-width: 500px;
+    min-height: 80%;
+}
+
+.planets-details-container .planets-details-wrapper {
+    display: none;
+}
+
+.active-details-wrapper {
+    display: block !important;
+}
+
+.planets-links {
+    width: 100%;
+    min-height: 50px;
+}
+
+.planets-links ul {
+    min-height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.planets-links ul li {
+    list-style-type: none;
+    color: white;
+    font-size: 1.1em;
+    /* margin-right: 50px; */
+    /* border: 1px solid olive; */
+    min-height: inherit;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.planets-links ul li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.active {
+    border-bottom: 4px solid white;
+}
+
+.planets-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 50px);
+}
+
+.planets-details-wrapper h1 {
+    margin: 30px 0;
+    color: white;
+    font-size: 6em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.planets-details-wrapper p.planet-desc {
+    width: 90%;
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 0 0 20px;
+}
+
+.planets-details-wrapper hr {
+    width: 90%;
+    height: .3px;
+    background: white;
+    border: none;
+    margin: 20px 0;
+    background-color: rgba(255, 253, 253, 0.347);
+}
+
+.distance-days {
+    display: flex;
+    color: white;
+}
+
+.distance-days > div {
+    width: calc(100% / 2);
+}
+
+.distance-days > div p:nth-child(1) {
+    font-size: .8em;
+    font-weight: 100;
+}
+
+.distance-days > div p:nth-child(2) {
+    font-size: 2em;
+    margin-top: 10px;
+}
+/* DESTINATION PAGE CSS END */
+
+/* CREW PAGE CSS START */
+section#crew {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/starter-code/assets/crew/background-crew-desktop.jpg'), linear-gradient(rgba(92, 91, 91, 0.65),rgba(58, 56, 56, 0.5));
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+main#crew-section {
+    width: 100%;
+    height: calc(100vh - 150px);
+    /* border: 1px solid red; */
+    overflow-y: hidden;
+    padding: 0 20px;
+    overflow-x: hidden;
+}
+
+.crew-section-container {
+    width: 100%;
+    height: inherit;
+    max-width: 1300px;
+    margin: auto;
+    /* border: 2px solid green; */
+}
+
+h1#crew-section-opening {
+    color: white;
+    font-weight: 400;
+    font-size: 1.5em;
+    height: 30px;
+    /* border: red 1px solid; */
+}
+
+h1#crew-section-opening span {
+    color: #484A51;
+    /* color: red; */
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.crew-content-container {
+    width: 100%;
+    height: 100%;
+    height: calc(100% - 30px);
+    /* border: 4px solid white; */
+    display: flex;
+    align-items: flex-end;
+}
+
+.crew-member-details {
+    width: 50%;
+    height: 80%;
+    /* border: 2px solid sandybrown; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.crew-member-details h1 {
+    font-weight: 400;
+    font-size: 2em;
+    color: #484A51;
+    text-transform: uppercase;
+}
+
+.crew-member-details h2 {
+    font-weight: 400;
+    font-size: 3em;
+    margin: 20px 0;
+    text-transform: uppercase;
+    /* color: #484A51; */
+}
+
+.crew-member-details p {
+    width: 100%;
+    max-width: 400px;
+    line-height: 1.5;
+    font-size: 1.2em;
+}
+
+.crew-switching-dots {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 100px;
+    /* border: 1px solid white; */
+    display: flex;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: #484A51;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.dot:hover {
+    background-color: rgb(168, 160, 160);
+}
+
+.active-dot {
+    background-color: white;
+}
+
+.crew-switching-dots .dot:not(:last-child) {
+    margin-right: 50px;
+}
+
+.crew-member-img {
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid darkkhaki; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.crew-member-img > div {
+    display: none;
+}
+
+.crew-member-img > div.active-member-img {
+    display: block;
+}
+
+.role-name-bio > div {
+    display: none;
+}
+
+.role-name-bio > div.active-member-details {
+    display: block;
+}
+
+/* CREW PAGE CSS END */
+
+/* TECHNOLOGY PAGE CSS START */
+section#technology {
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url('/starter-code/assets/technology/background-technology-desktop.jpg'), linear-gradient(rgba(92, 91, 91, 0.65),rgba(58, 56, 56, 0.5)); */
+    background-image: url('/starter-code/assets/technology/background-technology-desktop.jpg');
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+main#technology-section{
+    width: 100%;
+    height: calc(100vh - 150px);
+    /* border: 1px solid red; */
+    overflow-y: hidden;
+    /* padding: 0 20px; */
+    padding: 0 0 0 40px;
+    overflow-x: hidden;
+    position: relative;
+
+}
+
+.tech-section-container {
+    width: 100%;
+    height: inherit;
+    /* max-width: 1300px; */
+    margin: auto;
+    /* border: 2px solid green; */
+}
+
+h1#tech-section-opening {
+    color: white;
+    font-weight: 400;
+    font-size: 1.5em;
+    height: 30px;
+    /* border: red 1px solid; */
+}
+
+h1#tech-section-opening span {
+    color: #484A51;
+    /* color: red; */
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.tech-content-container {
+    width: 100%;
+    height: calc(100% - 30px);
+    /* border: 4px solid white; */
+    display: flex;
+    /* align-items: flex-end; */
+}
+
+.tech-content-text-section {
+    width: 60%;
+    height: 100%;
+    /* border: 4px solid rebeccapurple; */
+    display: flex;
+}
+
+.tech-content-switching-area {
+    width: 130px;
+    height: 100%;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tech-content-switching-area div {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    /* background-color: antiquewhite; */
+    border: .5px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tech-content-switching-area div:nth-child(2) {
+    margin: 40px 0;
+}
+
+.tech-content-switching-area div span {
+    color: white;
+    font-size: 2em;
+}
+
+.active-tech-content {
+    background-color: white;
+}
+
+.active-tech-content span {
+    color: #000 !important;
+}
+
+.tech-content-text-area {
+    width: calc(100% - 130px);
+    height: 100%;
+    /* border: 3px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+.tech-text-area-wrapper {
+    width: 100%;
+    height: 350px;
+    /* border: 2px solid salmon */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    display: none;
+}
+
+.active-tech-text {
+    display: block;
+}
+
+.tech-text-area-wrapper p:first-child {
+    font-size: .8em;
+    /* border: 1px solid white; */
+}
+
+.tech-text-area-wrapper h1 {
+    font-size: 3em;
+    font-weight: 400;
+    margin: 10px 0 20px;
+    text-transform: uppercase;
+}
+
+.tech-text-area-wrapper p:last-child {
+    /* border: 3px solid red; */
+    width: 400px;
+    font-size: 1.4em;
+    line-height: 1.3;
+    /* font-size: ; */
+}
+
+.tech-content-img-section {
+    /* width: 700px; */
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* border: darkgreen 3px solid; */
+    /* position: absolute; */
+    /* right: 0; */
+    /* top: 0; */
+}
+
+.tech-content-img-section div {
+    width: 100%;
+    /* height: 550px; */
+    height: 100%;
+    /* border: 1px solid red; */
+    display: none;
+}
+
+.tech-content-img-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tech-content-img-section div.active-tech-image {
+    display: block;
+}
+
+
+
+/* TECHNOLOGY PAGE CSS END */
+
+
+
+/* MEDIA QUERIES START */
+
+/* 1200px desktop, large screen START */
+@media screen and (max-width: 1200px) { 
+
+    /* home page media queries START */
+
+    /* nav section media queries START */
+
+    .links-container {
+        width: 600px;
+        transition: .5s ease-in-out;
+    }
+
+    .links-container hr {
+        display: none;
+    }
+
+.nav-links li a {
+    font-size: .9em;
+}
+
+    /* nav section media queries END */
+
+    /* home page media queries END */
+
+    /* crew page media queries START */
+.crew-member-img {
+    height: 80%;
+    transition: all .5s ease-in-out;
+}
+    /* crew page media queries END */
+
+}
+
+/* 1200px desktop, large screen END */
+
+/* 1024px screen size START */
+@media screen and (max-width: 1024px) {
+
+    /* home content media queries START */
+    .home-content .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+.home-content .container > div {
+    width: 100%;
+    min-height: calc(100% / 2);
+    align-items: center;
+}
+
+.home-content .container .explore {
+    align-items: center;
+}
+
+    /* home content media queries END */
+
+    /* destination page media queries START */
+
+section#destination nav {
+    height: 80px;
+}
+
+.destination-content .container h1.opening {
+    font-size: 1.2em;
+    height: 40px;
+}
+
+.destination-content .planet-details-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.destination-content .planet-details-container > div {
+    width: 100%;
+    min-height: calc((100vh - (150px + 60px)) / 2);
+}
+
+.planets-img-container {
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid red; */
+}
+
+.planets-img-container img {
+    width: 200px;
+    height: 200px;
+}
+
+.planets-details-container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.planets-links ul {
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.planets-links ul li {
+    font-size: 1em;
+}
+
+.planets-details-wrapper h1 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 4em;
+}
+
+.planets-details-wrapper p.planet-desc {
+    text-align: center;
+    line-height: 1.3;
+    width: 100%;
+    max-width: 600px;
+}
+
+.distance-days {
+    justify-content: center;
+}
+
+.distance-days > div {
+    text-align: center;
+}
+
+.planets-details-wrapper hr {
+    width: 100%;
+    max-width: 600px;
+}
+    /* destination page media queries END */
+
+
+    /* crew page 1024 media queries START */
+
+.crew-content-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.crew-member-details {
+    width: 100%;
+    align-items: center;
+    /* border: 4px solid crimson; */
+}
+
+.crew-switching-dots {
+    /* border: 1px solid white; */
+    justify-content: center;
+}
+
+.crew-member-img {
+    /* border: 1px solid seagreen; */
+    height: 100%;
+    width: 100%;
+}
+
+
+    /* crew page 1024 media queries END */
+
+}
+/* 1024px screen size END */
+
+/* 768px screen size START */
+@media screen and (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+.links-container {
+    width: 300px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    position: fixed;
+    transition: all .5s ease-in-out;
+}
+
+.toggle-menu {
+    transform: translateX(100%);
+}
+
+.close-menu {
+    display: block;
+    color: white;
+    z-index: 3;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.nav-links {
+    flex-direction: column;
+    height: 300px;
+    justify-content: initial;
+    align-items: flex-start;
+    margin-top: 100px;
+    position: relative;
+}
+
+.nav-links li {
+    display: block;
+    margin: 20px 40px;
+    height: auto;
+}
+
+li.active-link {
+    border-bottom: none;
+}
+
+.menu {
+    display: block;
+    margin-right: 40px;
+}
+
+/* home content CSS media queries START */
+
+.home-content .container {
+    justify-content: flex-start;
+}
+
+.home-content .container > div {
+    width: 100%;
+}
+
+.home-content .container .explore {
+    margin-top: 50px;
+}
+
+.home-content .container .text-content p {
+    font-size: 1.1em;
+    transition: .5s ease-in-out;
+    text-align: center;
+}
+
+.home-content .container .text-content p:nth-child(2) {
+    font-size: 5em;
+    margin: 25px 0;
+    transition: .5s ease-in-out;
+    text-align: center;
+}
+
+.home-content .container .text-content p:nth-child(3) {
+    line-height: 1.1;
+}
+
+.home-content .container .explore .wrapper {
+    width: 250px;
+    height: 250px;
+    transition: .5s ease-in-out;
+}
+
+.home-content .container .explore a {
+    width: 200px;
+    height: 200px;
+    font-size: 1.2em;
+}
+/* home content CSS media queries END */
+
+    /* destination page media queries START */
+
+section#destination {
+    padding: 0 15px;
+}
+
+.destination-content .container h1.opening {
+    height: 20px;
+    font-size: 1em;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0;
+}
+
+.destination-content .planet-details-container > div {
+    min-height: 150px;
+}
+
+.planets-img-container img {
+    width: 150px;
+    height: 150px;
+}
+
+.planets-links ul li {
+    font-size: .8em;
+    min-height: 30px;
+}
+
+.planets-links ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.active {
+    border-bottom: 2px solid white;
+}
+
+.planets-details-wrapper h1 {
+    font-size: 2.5em;
+}
+
+.planets-details-wrapper p.planet-desc {
+    max-width: 400px;
+    font-size: 1em;
+    line-height: 1;
+}
+
+.distance-days {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.days {
+    margin-top: 10px;
+}
+
+    /* destination page media queries END */
+
+}
+/* 768px screen size END */
+
+
+
+/* MEDIA QUERIES END */
